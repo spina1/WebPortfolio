@@ -18,9 +18,18 @@ body{
 .bg-yellow{
 	background-color: yellow;
 }
-.bg-dark{
+.bg-darknav{
+	color:white;
 	background-color: black;
-	color: white;
+}
+.bg-darksec{
+	color:black;
+	background-color: gray;
+}
+.bg-dark{
+	color: black;
+	background-color: rgb(180,180,180);
+	
 }
 .text-red{
 	color: red;
@@ -125,4 +134,7 @@ h3{
 }
 .mem{
 	display: inline-block;
+}
+p{
+	font-size: 25px;
 }
