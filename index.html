@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="icon" type="image/x-icon" href="images/favicon.ico">
 		<title> Silvino's WebDesign Portfolio</title>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
+		<link rel="stylesheet" type="text/css" href="style.css">
   		<style>
   			section:before{
   				height: 54px;
@@ -28,6 +30,8 @@
 	</head>
 	
 	<body>
+		<script src="script.js"></script>
+
 		<nav id="top-navbar" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
 			<a class="navbar-brand" href="#section-showcase"><strong>Silvino's WebDesign Portfolio</strong></a>
 			<button class="navbar-toggler" type="button" data-toggle= "collapse" data-target="#menu">
@@ -57,7 +61,7 @@
 				<p> This is a place for some place holder text. </p>
 			</div>
 		</aside>	
-		<section id = "section-home" class='p-1 container-fluid'>
+		<section id = "section-home" class='bg-white p-1 container-fluid'>
 			<h1> Welcome </h1>
 			<hr>
 			<p>
@@ -157,6 +161,7 @@
 			</div>
 		</section>
 		<section id = "section-blog" class='bg-light pb-1 container-fluid'>
+
 			<h1>Blog</h1>
 			<hr>
 			<p>Explain what your blog will be about.</p>
@@ -165,7 +170,9 @@
 				<h3>Simple Guidance for you and clippers</h3>
 				<small>Posted by Silvino Pina </small>
 				<p>Guide for Clippers and Trimmers</p>
-				<a class="btn btn-outline-dark" href="BlogPost1/post1.html">Read More</a>
+				<a class="button" href="BlogPost1/post1.html">
+				<span class="button__text">Read More</span> <i class="button__icon fa fa-arrow-right"></i>
+				</a>
 				<hr>
 			</article>
 		</section>
