@@ -22,15 +22,71 @@
   			}
   			html{
   				scroll-behavior: smooth;
-  			}
-  		
+				}
+				
+				.top-buffer {
+					margin-top: 50px;
+				}
+
+		
+				.container h3{
+					font-weight: bold;
+				}
+
+				.progress{
+					height: 50px;
+					border-radius: 50px ;
+					box-shadow: none;
+					padding: 6px;
+					margin-bottom: 20px;
+					overflow: visible;
+				}
+				.progress .progress-bar{
+					box-shadow: none;
+					position: relative;
+					border-radius: 20px;
+					animation: animate-positive 2s;
+				}
+
+				.progress .progress-title{
+					font-size: 17px;
+					font-weight: 700;
+					color: white;
+					text-transform: uppercase;
+					margin: 0;
+					position: absolute;
+					top: 12px;
+					left: 15px;
+				}
+
+				.progress .progress-value{
+					width: 45px;
+					height: 33px;
+					line-height: 35px;
+					background-color: black;
+					border-radius: 50px;
+					box-shadow: 0 1px 1px rgba(0, 0,0, 2);
+					font-weight: bold;
+					font-size: 14px;
+					color: teal;
+					position: absolute;
+					top: 3px;
+					right: 7px;
+				}
+
+				@keyframes animate-positive{
+					0%{
+						width: 0;
+					}
+				}
+
   		</style>
   		
 
 	</head>
 	
 	<body>
-		<script src="script.js"></script>
+		
 
 		<nav id="top-navbar" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
 			<a class="navbar-brand" href="#section-showcase"><strong>Silvino's WebDesign Portfolio</strong></a>
@@ -81,37 +137,37 @@
 					<p> I am a Junior at the University of New Orleans </p>
 				</div>
 			</div>
+
+			<div class="row" >
+				<div class="col-md-6 top-buffer ">
+					<div class="progress">
+						<div class="progress-bar" style="width: 89%; background: black;" >
+							<h3 class="progress-title">Java</h3>
+							<div class="progress-value">89%</div>
+						</div>
+					</div>
+					<div class="progress">
+						<div class="progress-bar" style="width: 70%; background: black;" >
+							<h3 class="progress-title">HTML</h3>
+							<div class="progress-value">70%</div>
+						</div>
+					</div>
+					<div class="progress">
+						<div class="progress-bar" style="width: 57%; background: black;" >
+							<h3 class="progress-title">CSS</h3>
+							<div class="progress-value">57%</div>
+						</div>
+					</div>
+					<div class="progress">
+						<div class="progress-bar" style="width: 60%; background: black;" >
+							<h3 class="progress-title">JavaScript</h3>
+							<div class="progress-value">60%</div>
+						</div>
+					</div>
+				</div>
+			</div>
 			
 			
-			<table class="table mt-4">
-				<thead>
-					<tr>
-						<th colspan= '2' class="text-center"> Technical Skills </th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<th> Programming Tools </th>
-						<td> Java, JavaScript </td>
-					</tr>
-					<tr>
-						<th> Frontend Tools </th>
-						<td> HTML, CSS </td>
-					</tr>
-					<tr>
-						<th> Database tools </th>
-						<td> MongoDB, Mongoose, SQL </td>
-					</tr>
-					<tr>
-						<th> Version Control & Deployment Tools </th>
-						<td> git, github, gitlab </td>
-					</tr>
-					<tr>
-						<th> Architecture & Design </th>
-						<td> OOP, MEAN Stack, REST, Agile, TDD </td>
-					</tr>
-				</tbody>
-			</table>
 		</section>
 		<section id = "section-projects" class='bg-white container-fluid'>
 			<h1> Projects </h1>
@@ -228,5 +284,6 @@
 		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" ></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+		<script src="script.js"></script>
 	</body>
 <html>
