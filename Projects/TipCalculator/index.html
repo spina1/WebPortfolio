@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>
+            TipCalculator
+        </title>
+    </head>
+    <body>
+        <!--Tip Calculation-->
+        <div id="container">
+            <h1>Tip Calculator</h1>
+            <div id="calculator">
+                <form>
+                    <p>What was your total?</p>
+                    <p>$ <input id="total" type="text" placeholder="Total">
+                    <p>Service Quality</p>
+                    <select id="serviceQuality">
+                        <option disabled selected value="0">Select an Option</option>
+                        <option value="0.25">25% - Amazing</option>
+                        <option value="0.20">20% - Good</option>
+                        <option value="0.15">15% - Average</option>
+                        <option value="0.1">10% - Poor</option>
+                        <option value="0.05">5% - Awful</option>
+                    </select>
+                </form>
+                <p>Solo or Splitting?</p>
+                <input id="pplsplit" type="text" placeholder="Number of People">
+                <button type="button" id="calculate">Calculate</button>
+            </div>
+            <!--Tip Caclulation End-->
+            <!--Result-->
+            <div id="tipAmt">
+                <p>$<span id="tip">0.00</span>
+                <small id="perPerson"> per Person </small>
+            </div>
+            <!--end Results-->
+            <!--Transaction history-->
+            <div id= "transactions">
+                <h2>Transactions</h2>
+                <ul id="transactionsList"></ul>
+
+            </div>
+        </div>
+        <script src="calculate.js"></script>
+    </body>
+</html>

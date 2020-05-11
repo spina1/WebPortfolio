@@ -1,0 +1,54 @@
+body{
+    background-color: azure;
+}
+#container{
+    height: 950px;
+    width: 400px;
+    margin: 100px auto;
+    background-color: grey;
+    border-radius: 40px;
+}
+h1{
+    color: white;
+    margin: 0;
+    padding: 10px 140px;
+    font-size: 30px;
+}
+
+p{
+    padding-left: 20px;
+    padding-top: 10px;
+}
+form input{
+    width: 100px;
+}
+input{
+    padding-left: 20px;
+}
+#pplsplit{
+    width: 60%0;
+    padding-left: 20px;
+    margin-left: 20px;
+}
+#serviceQuality{
+    padding: 7px 7px 13px 13px;
+    margin-left: 20px;
+}
+button{
+    display: block;
+    margin: 30px auto;
+    background-color: red;
+    border-radius: 40px;
+    font-weight: bold;
+    color: white;
+}
+#tipAmt{
+    font-size: 30px;
+    margin-top: 1px auto;
+    padding-left: 130px;
+    padding-top: 1px;
+    display: block;
+}
+#transactions{
+    font-size: 30;
+}
